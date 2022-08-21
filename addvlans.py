@@ -183,10 +183,11 @@ def getInstanceOCIDs (ocvp_client, sddc_id):
 
 ################Create a route table for VLANs####################
 print("\n************** Create route table  ************************\n")
-
-routetable_id = create_rt_table(core_client,data["route-table-1"], None, None)
-data["route-table-1"]["routeTableConfig"]["route_table_id"] = routetable_id
-
+if (not data["routetable_id"]):
+    routetable_id = create_rt_table(core_client,data["route-table-1"], None, None)
+    data["route-table-1"]["routeTableConfig"]["route_table_id"] = routetable_id
+else :
+    routetable_id = data["routetable_id"]
 
 
 ###################  Create VLANS  #############################################
