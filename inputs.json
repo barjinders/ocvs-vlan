@@ -1,5 +1,6 @@
 {
     "sddc_id": "ocid1.vmwaresddc.oc1.xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "routetable_id":"",
     "vlanConfig": [
         {
             "cidr_block": "10.1.x.x/x",
