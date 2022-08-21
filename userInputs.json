@@ -1,0 +1,46 @@
+{
+    "sddc_id": "ocid1.vmwaresddc.oc1.ap-tokyo-1.amaaaaaap77apcqarqfq7g4zhxqyxfk75qx7usicrovlteg33pootetu5ceq",
+    "vlanConfig": [
+        {
+            "cidr_block": "10.1.38.0/29",
+            "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+            "display_name": "VLAN-SDDC-JP-NSX Edge Uplink 3",
+            "nsg_ids": [
+                "ocid1.networksecuritygroup.oc1.ap-tokyo-1.aaaaaaaa43vpe3tqiyirk7n3htsbvh5mln2nvrqsmfhz5zqsgvdeksvsc2sq"
+            ],
+            "route_table_id": "",
+            "vcn_id": "ocid1.vcn.oc1.ap-tokyo-1.amaaaaaap77apcqavoecdefbhzft6rab7ovqoizde76yo5giqbltlgjhgbua"
+        },
+        {
+            "cidr_block": "10.1.39.0/29",
+            "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+            "display_name": "VLAN-SDDC-JP-NSX Edge Uplink 4",
+            "nsg_ids": [
+                "ocid1.networksecuritygroup.oc1.ap-tokyo-1.aaaaaaaa43vpe3tqiyirk7n3htsbvh5mln2nvrqsmfhz5zqsgvdeksvsc2sq"
+            ],
+            "route_table_id": "",
+            "vcn_id": "ocid1.vcn.oc1.ap-tokyo-1.amaaaaaap77apcqavoecdefbhzft6rab7ovqoizde76yo5giqbltlgjhgbua"
+        }
+    ],
+    "route-table-1": {
+        "routeTableConfig": {
+            "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+            "vcn_id": "ocid1.vcn.oc1.ap-tokyo-1.amaaaaaap77apcqavoecdefbhzft6rab7ovqoizde76yo5giqbltlgjhgbua",
+            "display_name": "Route Table for OCI Firewall traffic"
+        },
+        "routeRules": [
+            {
+                "network_entity_id": "ocid1.drg.oc1.ap-tokyo-1.aaaaaaaaedez2rcoq2y2pf23l4udlsw3cm52bs3vm22te5yel2js3m5bzodq",
+                "destination": "0.0.0.0/0",
+                "description": "Default route to OCI Firewall",
+                "destination_type": "CIDR_BLOCK"
+            },
+            {
+                "network_entity_id": "ocid1.drg.oc1.ap-tokyo-1.aaaaaaaaedez2rcoq2y2pf23l4udlsw3cm52bs3vm22te5yel2js3m5bzodq",
+                "destination": "192.168.10.0/24",
+                "description": "Test route",
+                "destination_type": "CIDR_BLOCK"
+            }
+        ]
+    }
+}

@@ -1,0 +1,317 @@
+
+************** Create route table start ************************
+
+Creating route table "Route Table for OCI Firewall traffic"...
+Route table created....ocid1.routetable.oc1.ap-tokyo-1.aaaaaaaakkklzwbnr2pzh6nzbpkjggcj3cl4lakbvfd5mqsl4sgfnq4lywjq
+
+************** Create route table end ************************
+
+
+************** Create VLANS start ************************
+Creating VLAN "VLAN-SDDC-JP-NSX Edge Uplink 3"...
+VLAN created....ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqapiae32wxeo5r2yfh4szpcnllimbpwnpswgjhxwcnayea
+Creating VLAN "VLAN-SDDC-JP-NSX Edge Uplink 4"...
+VLAN created....ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqaivsl7u25hpjom7l2x52xxi25cytbe2smcotvoizk5fjq
+
+************** Create VLANS end ************************
+
+************** Attach VLANS start ************************
+Attaching VLAN VLAN-SDDC-JP-NSX Edge Uplink 3 to ESXi: ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqchqecu3rczddrxbokstelikz4uqs2rbxpco4y2oum5vzq
+Attaching nsx edge uplink 3 to Nic0
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHED
+vNIC attached to Physical nic 0 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcvtzcxq6ttra2e2kt3xj6tyx667pc2vmpyvgq2mlug6oq
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821093633",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcvtzcxq6ttra2e2kt3xj6tyx667pc2vmpyvgq2mlug6oq",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqchqecu3rczddrxbokstelikz4uqs2rbxpco4y2oum5vzq",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 0,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:36:33.955000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqapiae32wxeo5r2yfh4szpcnllimbpwnpswgjhxwcnayea",
+  "vlan_tag": 3233,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljr6hhtnpqauopzu5aflqowhh4xreovopfud5x5agjjkkhr5qxr3lwa"
+}
+
+
+Taking a quick 10s nap......
+
+
+Attaching nsx edge uplink 3 to Nic1
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHED
+vNIC attached to Physical nic 1 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcazpldyt5374e74bql7unh2qqyfpkvihz2tzn6vdma44q
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821093656",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcazpldyt5374e74bql7unh2qqyfpkvihz2tzn6vdma44q",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqchqecu3rczddrxbokstelikz4uqs2rbxpco4y2oum5vzq",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 1,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:36:57.274000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqapiae32wxeo5r2yfh4szpcnllimbpwnpswgjhxwcnayea",
+  "vlan_tag": 3233,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljrllwq4zdvsegi5jk3j6pedy4xcb4mlzgbd3kvzhycaybay5a4dnka"
+}
+Attaching VLAN VLAN-SDDC-JP-NSX Edge Uplink 4 to ESXi: ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqchqecu3rczddrxbokstelikz4uqs2rbxpco4y2oum5vzq
+Attaching nsx edge uplink 4 to Nic0
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHED
+vNIC attached to Physical nic 0 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqclw4a5toc3k5sjqqroz2354wwfjgc6oaigkwsbqq6a27a
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821093714",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqclw4a5toc3k5sjqqroz2354wwfjgc6oaigkwsbqq6a27a",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqchqecu3rczddrxbokstelikz4uqs2rbxpco4y2oum5vzq",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 0,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:37:14.925000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqaivsl7u25hpjom7l2x52xxi25cytbe2smcotvoizk5fjq",
+  "vlan_tag": 2798,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljr2e5qrylxixei4rgpvh2pvb7dfazbqh6364asuzj22k3dwyqdilcq"
+}
+
+
+Taking a quick 10s nap......
+
+
+Attaching nsx edge uplink 4 to Nic1
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHED
+vNIC attached to Physical nic 1 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcak2ts32fnydcu3zyuf5f7ouamlwflpe2vqjd567iucka
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821093735",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcak2ts32fnydcu3zyuf5f7ouamlwflpe2vqjd567iucka",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqchqecu3rczddrxbokstelikz4uqs2rbxpco4y2oum5vzq",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 1,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:37:36.219000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqaivsl7u25hpjom7l2x52xxi25cytbe2smcotvoizk5fjq",
+  "vlan_tag": 2798,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljr5kwprhmosjhrhogiafyjw2ngkl25elvugf52tqxtzz4bkllfvj6a"
+}
+Attaching VLAN VLAN-SDDC-JP-NSX Edge Uplink 3 to ESXi: ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqc3zzpf5al6pjylf3ilnlhsmrrlzovakc5xjvg72yulveq
+Attaching nsx edge uplink 3 to Nic0
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHED
+vNIC attached to Physical nic 0 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqc7nzo63kxx3uekhx2jyfryx3a4xsoxkthmsbfzo4fp6na
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821093747",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqc7nzo63kxx3uekhx2jyfryx3a4xsoxkthmsbfzo4fp6na",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqc3zzpf5al6pjylf3ilnlhsmrrlzovakc5xjvg72yulveq",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 0,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:37:48.315000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqapiae32wxeo5r2yfh4szpcnllimbpwnpswgjhxwcnayea",
+  "vlan_tag": 3233,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljrsmrwrcwhctbywa22gsoy3rbgulo32n5cguayqx2pk4ov45atynqq"
+}
+
+
+Taking a quick 10s nap......
+
+
+Attaching nsx edge uplink 3 to Nic1
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHED
+vNIC attached to Physical nic 1 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcb3nepbr6azyxfaxbgjqsogfgepyqwv5ua564qyfx3dua
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821093811",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcb3nepbr6azyxfaxbgjqsogfgepyqwv5ua564qyfx3dua",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqc3zzpf5al6pjylf3ilnlhsmrrlzovakc5xjvg72yulveq",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 1,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:38:11.909000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqapiae32wxeo5r2yfh4szpcnllimbpwnpswgjhxwcnayea",
+  "vlan_tag": 3233,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljrcgy65fcgd7nt7jxfwgipjnbyxw6ig3u6jpf7yz62wnmepfnjzmea"
+}
+Attaching VLAN VLAN-SDDC-JP-NSX Edge Uplink 4 to ESXi: ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqc3zzpf5al6pjylf3ilnlhsmrrlzovakc5xjvg72yulveq
+Attaching nsx edge uplink 4 to Nic0
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHED
+vNIC attached to Physical nic 0 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcnihuj635s4aps5omlngszzat7fgqurup3mddy3zzsqga
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821093823",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcnihuj635s4aps5omlngszzat7fgqurup3mddy3zzsqga",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqc3zzpf5al6pjylf3ilnlhsmrrlzovakc5xjvg72yulveq",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 0,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:38:23.753000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqaivsl7u25hpjom7l2x52xxi25cytbe2smcotvoizk5fjq",
+  "vlan_tag": 2798,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljr4te2hh6xeo4y4hjivkol6wo4a4oruxbgj2i7svli2y46jxyi274a"
+}
+
+
+Taking a quick 10s nap......
+
+
+Attaching nsx edge uplink 4 to Nic1
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHED
+vNIC attached to Physical nic 1 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcgrwrw4qrmus7wea32ucz7yg7mq52ecrjuic7coxlspxa
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821093921",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcgrwrw4qrmus7wea32ucz7yg7mq52ecrjuic7coxlspxa",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqc3zzpf5al6pjylf3ilnlhsmrrlzovakc5xjvg72yulveq",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 1,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:39:22.513000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqaivsl7u25hpjom7l2x52xxi25cytbe2smcotvoizk5fjq",
+  "vlan_tag": 2798,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljrsdax2b7ajqqhhaqp2qexyrtt7h2yui3w3l6j2lx4cgthzpfusaea"
+}
+Attaching VLAN VLAN-SDDC-JP-NSX Edge Uplink 3 to ESXi: ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqcbmvaez5kwizhfnevv4pe4qjrwpk5752oejxxdtrxkfza
+Attaching nsx edge uplink 3 to Nic0
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHED
+vNIC attached to Physical nic 0 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcwsqxoqxhkrlacgxadt6lio2f5uymlwlc4o3grhvtxhcq
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821093933",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcwsqxoqxhkrlacgxadt6lio2f5uymlwlc4o3grhvtxhcq",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqcbmvaez5kwizhfnevv4pe4qjrwpk5752oejxxdtrxkfza",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 0,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:39:33.973000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqapiae32wxeo5r2yfh4szpcnllimbpwnpswgjhxwcnayea",
+  "vlan_tag": 3233,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljr5lq4tsm7xcwrh2wqfljsvs63z7wno5cf5cd2clldmk6fupnvjjxa"
+}
+
+
+Taking a quick 10s nap......
+
+
+Attaching nsx edge uplink 3 to Nic1
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHED
+vNIC attached to Physical nic 1 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcpqvhvqlb4znfgqzjabms2okq5qxkuw5lcaq3sis6ckqq
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821093954",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcpqvhvqlb4znfgqzjabms2okq5qxkuw5lcaq3sis6ckqq",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqcbmvaez5kwizhfnevv4pe4qjrwpk5752oejxxdtrxkfza",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 1,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:39:55.008000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqapiae32wxeo5r2yfh4szpcnllimbpwnpswgjhxwcnayea",
+  "vlan_tag": 3233,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljrhifwjm4eyyvqay6ly7jbqn3vjr4je6mlbm2z3frwgvhug2uldoeq"
+}
+Attaching VLAN VLAN-SDDC-JP-NSX Edge Uplink 4 to ESXi: ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqcbmvaez5kwizhfnevv4pe4qjrwpk5752oejxxdtrxkfza
+Attaching nsx edge uplink 4 to Nic0
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHING
+Lifecycle state of vnic 0: ATTACHED
+vNIC attached to Physical nic 0 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcjzlgus65fr4znfqzmm3xw757yhp3d3y3n23gmozu3gnq
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821094003",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcjzlgus65fr4znfqzmm3xw757yhp3d3y3n23gmozu3gnq",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqcbmvaez5kwizhfnevv4pe4qjrwpk5752oejxxdtrxkfza",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 0,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:40:03.870000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqaivsl7u25hpjom7l2x52xxi25cytbe2smcotvoizk5fjq",
+  "vlan_tag": 2798,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljrupxkxxlk653f734sl4fhheido52vpodxgqlkz72crj5rhufmmk5q"
+}
+
+
+Taking a quick 10s nap......
+
+
+Attaching nsx edge uplink 4 to Nic1
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHING
+Lifecycle state of vnic 1: ATTACHED
+vNIC attached to Physical nic 1 ....ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcdjyzmre5tzxj4xqq7pvdveas6y3qt676hhgq7ya2i4pa
+{
+  "availability_domain": "ZVCk:AP-TOKYO-1-AD-1",
+  "compartment_id": "ocid1.compartment.oc1..aaaaaaaawqa7l34gmt6jqxxxawkkbh7upnsn5bntrphfxocost6jm56pj3jq",
+  "display_name": "vnicattachment20220821094026",
+  "id": "ocid1.vnicattachment.oc1.ap-tokyo-1.anxhiljrp77apcqcdjyzmre5tzxj4xqq7pvdveas6y3qt676hhgq7ya2i4pa",
+  "instance_id": "ocid1.instance.oc1.ap-tokyo-1.anxhiljrp77apcqcbmvaez5kwizhfnevv4pe4qjrwpk5752oejxxdtrxkfza",
+  "lifecycle_state": "ATTACHED",
+  "nic_index": 1,
+  "subnet_id": null,
+  "time_created": "2022-08-21T09:40:27.297000+00:00",
+  "vlan_id": "ocid1.vlan.oc1.ap-tokyo-1.amaaaaaap77apcqaivsl7u25hpjom7l2x52xxi25cytbe2smcotvoizk5fjq",
+  "vlan_tag": 2798,
+  "vnic_id": "ocid1.vnic.oc1.ap-tokyo-1.abxhiljrpszrmdjaaq3fkl2c2luy5hdgwx4nzyp2cwyjrp6i2vg73p3ub6bq"
+}
+************** Attach VLANS end ************************
+
+The time of execution of above program is : 13.889814
